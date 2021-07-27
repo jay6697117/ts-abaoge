@@ -1,0 +1,23 @@
+{
+  "name": "ts-abaoge",
+  "version": "1.0.0",
+  "description": "跟着阿宝哥我的偶像一起学须typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay6697117/ts-abaoge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jay6697117/ts-abaoge/issues"
+  },
+  "homepage": "https://github.com/jay6697117/ts-abaoge#readme",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
