@@ -1,4 +1,4 @@
-{
+const temp = {
   "compilerOptions": {
     /* 基本选项 */
     "target": "es5", // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'

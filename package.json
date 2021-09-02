@@ -4,7 +4,7 @@
   "description": "跟着阿宝哥我的偶像一起学须typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc ./src/*.ts"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/jay6697117/ts-abaoge#readme",
   "dependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "4.0.2"
   }
 }

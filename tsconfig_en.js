@@ -1,4 +1,4 @@
-{
+const temp = {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     /* Basic Options */
