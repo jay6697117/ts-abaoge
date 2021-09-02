@@ -4,7 +4,7 @@
   "description": "跟着阿宝哥我的偶像一起学须typescript",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -v && rm -rf ./lib/*  && tsc && yarn prettier",
+    "build": "tsc -v && rm -rf ./lib/* && tsc && yarn prettier",
     "prettier": "prettier --write './**/*.{css,less,scss,js,jsx,ts,tsx,vue,json}'"
   },
   "repository": {

@@ -45,3 +45,4 @@ const temp = {
     emitDecoratorMetadata: true // 为装饰器提供元数据的支持
   }
 };
+console.log(temp);

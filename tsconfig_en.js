@@ -62,3 +62,4 @@ const temp = {
     forceConsistentCasingInFileNames: true /* Disallow inconsistently-cased references to the same file. */
   }
 };
+console.log(temp);
