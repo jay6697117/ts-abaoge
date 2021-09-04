@@ -8,10 +8,10 @@
       "ESNEXT" //es6转化成es5的环境
     ],
     "outDir": "./lib", // 指定输出目录
-    // "rootDir": "lib/", // 用来控制输出目录结构 --outDir.
     "target": "ES5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
     "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
     "declaration": true, // 生成相应的 '.d.ts' 文件
+    "declarationDir": "./lib/types", // 输出的'.d.ts' 文件路径
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     "strict": true, // 启用所有严格类型检查选项
     "noImplicitAny": true, // 在表达式和声明上有隐含的 any类型时报错
