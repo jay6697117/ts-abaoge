@@ -6,6 +6,6 @@ info="提交代码于: "$current
 cd `pwd`
 git add -A
 git commit -m "$info"
-git pull
-git push
-echo '已经成功push'
+# git pull
+# git push
+# echo '已经成功push'
