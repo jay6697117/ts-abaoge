@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/node': ^18.15.0
   clean-webpack-plugin: ^3.0.0
   html-webpack-plugin: ^3.2.0
   ts-loader: ^6.0.2
@@ -11,6 +12,7 @@ specifiers:
   webpack-merge: ^4.2.1
 
 devDependencies:
+  '@types/node': 18.15.0
   clean-webpack-plugin: 3.0.0_webpack@4.46.0
   html-webpack-plugin: 3.2.0_webpack@4.46.0
   ts-loader: 6.2.2_typescript@3.9.10

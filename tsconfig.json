@@ -6,7 +6,7 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "outDir": "output", //outDir 用来指定编译后文件所在的目录
-    "types": []
+    "types": ["node"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
