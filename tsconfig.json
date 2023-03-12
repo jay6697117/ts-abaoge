@@ -4,8 +4,10 @@
     "module": "commonjs",
     "strict": true,
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "output", //outDir 用来指定编译后文件所在的目录
+    "types": []
   },
   "include": ["src/**/*"],
-  "exclude": ["typescript-in-action", "node_modules"]
+  "exclude": ["node_modules"]
 }
