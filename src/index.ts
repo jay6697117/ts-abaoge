@@ -1,3 +1,1 @@
-// import './datatype';
-// import './interface';
-import './function';
+import './lesson/001';
