@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server  --config ./build/webpack.config.js",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js",
-    "type-check": "tsc --watch"
+    "type-check": "tsc --noEmit",
+    "type-check-watch": "pnpm type-check -- --watch"
   },
   "keywords": [],
   "author": "",
