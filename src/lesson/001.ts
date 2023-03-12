@@ -1,2 +1,5 @@
 console.log('hello world')
-export default  {};
+const a = 1;
+console.log('a', a)
+
+export default {};
