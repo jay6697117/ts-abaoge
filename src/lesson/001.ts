@@ -1,4 +1,5 @@
 export default {};
+/*
 enum Direction {
   NORTH = 1,
   SOUTH,
@@ -18,3 +19,15 @@ enum Direction {
 console.log('Direction', Direction)
 let dir:Direction = Direction.EAST // 2
 console.log('dir', dir)
+ */
+
+const enum Direction {
+  NORTH,
+  SOUTH,
+  EAST,
+  WEST
+}
+
+let dir = Direction.NORTH; // var dir = 0 /* Direction.NORTH */;
+console.log('dir', dir);
+// console.log('Direction', Direction);
