@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set 和 Map 数据结构</title>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <script>
+      // const arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+      // const s1 = new Set(arr);
+      // console.dir(s1);
+      // console.dir([...s1]);
+
+      const s1 = new Set();
+      document.querySelectorAll('div').forEach(div => s1.add(div));
+      console.dir(s1, s1.size);
+
+      const s2 = new Set(document.querySelectorAll('div'));
+      console.log(s2, s2.size);
+    </script>
+  </body>
+</html>
