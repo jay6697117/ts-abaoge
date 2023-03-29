@@ -16,13 +16,40 @@
       // const s1 = new Set(arr);
       // console.dir(s1);
       // console.dir([...s1]);
+      // const s1 = new Set();
+      // document.querySelectorAll('div').forEach(div => s1.add(div));
+      // console.dir(s1, s1.size);
+      // const s2 = new Set(document.querySelectorAll('div'));
+      // console.log(s2, s2.size);
+      // const str = 'ababbc';
+      // const s3 = new Set(str)
+      // console.dir(str);
+      // console.dir(s3);
+      // console.dir([...s3].join(''));
 
-      const s1 = new Set();
-      document.querySelectorAll('div').forEach(div => s1.add(div));
-      console.dir(s1, s1.size);
+      // let set = new Set();
+      // let a = NaN;
+      // let b = NaN;
+      // set.add(a);
+      // set.add(b);
+      // console.log(set);; // Set {NaN}
 
-      const s2 = new Set(document.querySelectorAll('div'));
-      console.log(s2, s2.size);
+      // 两个对象总是不相等的
+      // let set = new Set();
+      // set.add({});
+      // console.log(set.size); // 1
+      // console.dir(set);
+      // set.add({});
+      // console.log(set.size); // 2
+      // console.dir(set);
+
+      const s1 =new Set();
+      s1.add(1).add(2).add(2).add(3)
+      console.dir(s1);
+      s1.delete(2)
+      console.dir(s1);
+      console.log(s1.has(1));
+      console.log(s1.has(2));
     </script>
   </body>
 </html>
