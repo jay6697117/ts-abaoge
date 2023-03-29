@@ -7,11 +7,11 @@
     <title>Set 和 Map 数据结构</title>
   </head>
   <body>
-    <div>1</div>
+    <div id="demo">1</div>
     <div>2</div>
     <div>3</div>
-    <div>4</div>
     <script>
+      // 1.Set
       // const arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
       // const s1 = new Set(arr);
       // console.dir(s1);
@@ -79,10 +79,81 @@
       //   console.log('index', index, typeof index);
       //   console.log('-------------------');
       // });
-
+      /*
       // (method) ArrayConstructor.from<T>(arrayLike: ArrayLike<T>): T[] (+3 overloads)
-      let set = new Set([1, 2, 3]);
-      set = new Set(Array.from(set, val => val * 2));
+      let set = new Set([1, 2, 3, 2, 1]);
+      set = new Set(Array.from(set, val => val * 100));
+      console.dir(set);
+      const ws = new WeakSet();
+      console.log('ws 0:', ws)
+      // ws.add(1) // Uncaught TypeError: Invalid value used in weak set
+      ws.add(Symbol())
+      ws.add(new Date())
+      ws.add({a:1})
+      console.log('ws 1:', ws)
+      // for (const iterator of ws) {
+      //   console.log('iterator', iterator) // Uncaught TypeError: ws is not iterable
+      // }
+      */
+
+      // 2.Map
+      // const obj = {};
+      // const node = document.getElementById('demo');
+      // obj[node] = '666';
+      // console.log('node', node);
+      // console.log('obj', obj);
+      // console.log(Object.keys(obj));
+      // console.log(Object.values(obj));
+      // console.log(Object.entries(obj));
+      // // element被自动转为字符串[object HTMLDivElement]
+
+      // const m = new Map();
+      // const o = { p: 'Hello World' };
+
+      // m.set(o, 'content');
+      // console.log('m 1', m, m.size);
+      // m.get(o); // "content"
+
+      // m.has(o); // true
+      // m.delete(o); // true
+      // console.log('m 2', m, m.size);
+      // m.has(o); // false
+
+      // const map = new Map([
+      //   ['name', '张三'],
+      //   ['title', 'Author']
+      // ]);
+      // console.dir(map, map.size);
+      // console.log(map.has('name'));
+      // console.log(map.has('title'));
+      // console.log(map.get('name'));
+      // console.log(map.get('title'));
+
+      // const items = [
+      //   ['name', '张三'],
+      //   ['title', 'Author']
+      // ];
+      // const map = new Map();
+      // items.forEach(([key, value]) => map.set(key, value));
+      // console.dir(map);
+      // console.log(map.keys());
+      // console.log(map.values());
+      // console.log(map.entries());
+      // console.dir(Symbol);
+
+      const set = new Set([
+        ['foo', 1],
+        ['bar', 2]
+      ]);
+      console.dir(set);
+      const m1 = new Map(set);
+      console.dir(m1);
+      console.dir(m1.get('foo'));
+
+      const m2 = new Map([['baz', 3]]);
+      const m3 = new Map(m2);
+      m3.get('baz'); // 3
+      console.dir(m3);
     </script>
   </body>
 </html>
