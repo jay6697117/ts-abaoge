@@ -43,13 +43,46 @@
       // console.log(set.size); // 2
       // console.dir(set);
 
-      const s1 =new Set();
-      s1.add(1).add(2).add(2).add(3)
-      console.dir(s1);
-      s1.delete(2)
-      console.dir(s1);
-      console.log(s1.has(1));
-      console.log(s1.has(2));
+      // const s1 =new Set();
+      // s1.add(1).add(2).add(2).add(3)
+      // console.dir(s1);
+      // s1.delete(2)
+      // console.dir(s1);
+      // console.log(s1.has(1));
+      // console.log(s1.has(2));
+
+      // const items = new Set([1, 2, 3, 4, 5]);
+      // const array1 = Array.from(items);
+      // const array2 = [...items];
+      // console.log('items', items);
+      // console.log('array1', array1);
+      // console.log('array2', array2);
+      // console.log(Object.keys(array2));
+      // console.log(Object.values(array2));
+      // console.log(Object.entries(array2));
+      // console.log('Set.prototype', Set.prototype);
+      // console.log(
+      //   'Set.prototype[Symbol.iterator] === Set.prototype.values',
+      //   Set.prototype[Symbol.iterator] === Set.prototype.values
+      // );
+
+      // let set = new Set(['red', 'green', 'blue']);
+
+      // for (let x of set) {
+      //   console.log(x);
+      // }
+
+      // set键名和键值是同一个值
+      // let set = new Set([1, 4, 9]);
+      // set.forEach((element, index) => {
+      //   console.log('element', element, typeof element);
+      //   console.log('index', index, typeof index);
+      //   console.log('-------------------');
+      // });
+
+      // (method) ArrayConstructor.from<T>(arrayLike: ArrayLike<T>): T[] (+3 overloads)
+      let set = new Set([1, 2, 3]);
+      set = new Set(Array.from(set, val => val * 2));
     </script>
   </body>
 </html>
