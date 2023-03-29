@@ -141,19 +141,34 @@
       // console.log(map.entries());
       // console.dir(Symbol);
 
-      const set = new Set([
-        ['foo', 1],
-        ['bar', 2]
-      ]);
-      console.dir(set);
-      const m1 = new Map(set);
-      console.dir(m1);
-      console.dir(m1.get('foo'));
+      // const set = new Set([
+      //   ['foo', 1],
+      //   ['bar', 2]
+      // ]);
+      // console.dir(set);
+      // console.dir(set.keys());
+      // console.dir(set.values());
+      // console.dir(set.entries());
+      // const m1 = new Map(set);
+      // console.dir(m1);
+      // console.dir(m1.get('foo'));
+      // console.dir(m1.get('bar'));
+      // console.log('------------');
+      // const m2 = new Map([['baz', 3]]);
+      // const m3 = new Map(m2);
+      // console.dir(m2);
+      // console.dir(m3);
+      // console.log(m3.get('baz')); // 3
 
-      const m2 = new Map([['baz', 3]]);
-      const m3 = new Map(m2);
-      m3.get('baz'); // 3
-      console.dir(m3);
+      // const map = new Map();
+      // map.set(1, 'aaa').set(1, 'bbb');
+      // console.dir(map);
+      // console.dir(map.get('111'));
+
+      const map = new Map();
+      const arr = ['a'];
+      map.set(arr, 555);
+      console.dir(map.get(arr)); // 555
     </script>
   </body>
 </html>
