@@ -165,10 +165,21 @@
       // console.dir(map);
       // console.dir(map.get('111'));
 
+      // const map = new Map();
+      // const arr = ['a'];
+      // map.set(arr, 555);
+      // console.dir(map.get(arr)); // 555
+
       const map = new Map();
-      const arr = ['a'];
-      map.set(arr, 555);
-      console.dir(map.get(arr)); // 555
+
+      const k1 = ['a'];
+      const k2 = ['a'];
+
+      map.set(k1, 111).set(k2, 222);
+      console.dir(map);
+      console.dir(map.get(k1));; // 111
+      console.dir(map.get(k2));; // 222
+      // 变量k1和k2的值是一样的，但是它们在 Map 结构中被视为两个键。
     </script>
   </body>
 </html>
