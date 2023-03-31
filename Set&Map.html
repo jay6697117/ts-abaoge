@@ -170,16 +170,66 @@
       // map.set(arr, 555);
       // console.dir(map.get(arr)); // 555
 
-      const map = new Map();
+      // const map = new Map();
 
-      const k1 = ['a'];
-      const k2 = ['a'];
+      // const k1 = ['a'];
+      // const k2 = ['a'];
 
-      map.set(k1, 111).set(k2, 222);
+      // map.set(k1, 111).set(k2, 222);
+      // console.dir(map);
+      // console.dir(map.get(k1));; // 111
+      // console.dir(map.get(k2));; // 222
+      // // 变量k1和k2的值是一样的，但是它们在 Map 结构中被视为两个键。
+
+      // let map = new Map();
+      // map.set(NaN, 123);
+      // map.set(NaN, 456);
+      // console.dir(map.get(NaN));; // 456
+
+      // const map = new Map();
+      // map.set('foo', true);
+      // map.set('bar', false);
+      // console.dir(map);
+
+      // const m = new Map();
+      // m.set('edition', 6); // 键是字符串
+      // m.set(262, 'standard'); // 键是数值
+      // m.set(undefined, 'nah'); // 键是 undefined
+      // console.dir(m);
+      // console.log(m.get('edition'));
+      // console.log(m.get(262))
+      // console.log(m.get(undefined))
+      // console.log(m.has('edition'));
+      // console.log(m.has(262))
+      // console.log(m.has(undefined))
+      // m.delete('edition');
+      // m.delete(262);
+      // m.delete(undefined);
+      // console.dir(m);
+      // m.set(1,'aaa').set(2,'bbb').set(3,'ccc')
+      // console.dir(m);
+      // m.clear()
+      // console.dir(m);
+
+      const map = new Map([
+        [1, 'a'],
+        [2, 'b']
+      ]);
       console.dir(map);
-      console.dir(map.get(k1));; // 111
-      console.dir(map.get(k2));; // 222
-      // 变量k1和k2的值是一样的，但是它们在 Map 结构中被视为两个键。
+      console.dir(map.keys());
+      console.dir(map.values());
+      console.dir(map.entries());
+      for (const item1 of map.keys()) {
+        console.log('item1', item1);
+      }
+      for (const item2 of map.values()) {
+        console.log('item2', item2);
+      }
+      for (const [key, value] of map) {
+        console.log('key', key);
+        console.log('value', value);
+        console.log('------------');
+      }
     </script>
   </body>
 </html>
