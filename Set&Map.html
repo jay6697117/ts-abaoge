@@ -211,25 +211,55 @@
       // m.clear()
       // console.dir(m);
 
-      const map = new Map([
-        [1, 'a'],
-        [2, 'b']
-      ]);
-      console.dir(map);
-      console.dir(map.keys());
-      console.dir(map.values());
-      console.dir(map.entries());
-      for (const item1 of map.keys()) {
-        console.log('item1', item1);
-      }
-      for (const item2 of map.values()) {
-        console.log('item2', item2);
-      }
-      for (const [key, value] of map) {
-        console.log('key', key);
-        console.log('value', value);
-        console.log('------------');
-      }
+      // const map = new Map([
+      //   [1, 'a'],
+      //   [2, 'b']
+      // ]);
+      // console.dir(map);
+      // console.dir(map.keys());
+      // console.dir(map.values());
+      // console.dir(map.entries());
+      // for (const item1 of map.keys()) {
+      //   console.log('item1', item1);
+      // }
+      // for (const item2 of map.values()) {
+      //   console.log('item2', item2);
+      // }
+      // for (const [key, value] of map) {
+      //   console.log('key', key);
+      //   console.log('value', value);
+      //   console.log('------------');
+      // }
+      // console.dir(map[Symbol.iterator] === map.entries);
+
+      // const map = new Map([
+      //   [1, 'one'],
+      //   [2, 'two'],
+      //   [3, 'three']
+      // ]);
+      // console.dir(map);
+      // // console.log([...map.keys()]);
+      // // console.log([...map.values()]);
+      // // console.log([...map.entries()]);
+      // console.log('[...map]', [...map]);
+      // console.log(JSON.stringify([...map.entries()]));
+      // console.log(JSON.stringify([...map]));
+      // console.log(JSON.stringify([...map.entries()]) === JSON.stringify([...map]));
+      // const map0 = new Map().set(1, 'a').set(2, 'bb').set(3, 'ccc');
+      // console.dir(map0);
+      // map0.forEach(element => {
+      //   console.log('element 0:', element);
+      // });
+      // const map1 = new Map([...map0].map(([k, v]) => [k * 2, v + v]));
+      // console.dir(map1);
+      // map1.forEach(element => {
+      //   console.log('this 1', this)
+      //   console.log('element 1:', element);
+      // });
+
+      // const map2 = new Map([...map0].filter(([k, v]) => k < 3 && v.length > 1));
+      // console.dir(map2);
+
     </script>
   </body>
 </html>
