@@ -260,6 +260,59 @@
       // const map2 = new Map([...map0].filter(([k, v]) => k < 3 && v.length > 1));
       // console.dir(map2);
 
+      // const myMap = new Map().set(true, 7).set({ foo: 3 }, ['abc']);
+      // const arr = [...myMap];
+      // console.log('arr', arr);
+
+      // function strMapToObj(strMap) {
+      //   // let obj = Object.create(null);
+      //   let obj = {};
+      //   for (let [k, v] of strMap) {
+      //     console.log('k', k)
+      //     console.log('v', v)
+      //     console.log('--------------');
+      //     obj[k] = v;
+      //   }
+      //   return obj;
+      // }
+
+      // const myMap = new Map().set('yes', true).set('no', false).set({a:1}, 'hahaha');
+      // const res = strMapToObj(myMap);
+      // // { yes: true, no: false }
+      // console.dir(res);
+
+      // let obj = {"a":1, "b":2};
+      // console.log(Object.entries(obj));
+      // let m = new Map(Object.entries(obj));
+      // console.dir(m);
+
+      // function objToStrMap(obj) {
+      //   let strMap = new Map();
+      //   for (let k of Object.keys(obj)) {
+      //     strMap.set(k, obj[k]);
+      //   }
+      //   return strMap;
+      // }
+      // const res = objToStrMap({ yes: true, no: false });
+      // console.dir(res);
+
+      // function strMapToObj(strMap) {
+      //   // let obj = Object.create(null);
+      //   let obj = {};
+      //   for (let [k, v] of strMap) {
+      //     console.log('k', k)
+      //     console.log('v', v)
+      //     console.log('--------------');
+      //     obj[k] = v;
+      //   }
+      //   return obj;
+      // }
+      // console.log({a:1}['a']);
+
+      let obj = {"a":1, "b":2};
+      console.log(Object.entries(obj));
+      let m = new Map(Object.entries(obj));
+      console.dir(m);
     </script>
   </body>
 </html>
