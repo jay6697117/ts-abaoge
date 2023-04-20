@@ -309,10 +309,33 @@
       // }
       // console.log({a:1}['a']);
 
-      let obj = {"a":1, "b":2};
-      console.log(Object.entries(obj));
-      let m = new Map(Object.entries(obj));
-      console.dir(m);
+      // let obj = {"a":1, "b":2};
+      // console.log(Object.entries(obj));
+      // let m = new Map(Object.entries(obj));
+      // console.dir(m);
+
+      // let myMap = new Map().set('yes', true).set('no', false);
+      // console.dir(myMap);
+      // let myMap1 = new Map([
+      //   ['yes', true],
+      //   ['no', false]
+      // ]);
+      // console.dir(myMap1);
+      // console.dir(JSON.stringify([...myMap]));
+      // console.dir(JSON.stringify([...myMap1]));
+
+      // let myMap2 = new Map().set(true, 7).set({foo: 3}, ['abc']);
+      // console.dir(myMap2);
+      // console.dir([...myMap2]);
+      // console.dir(JSON.stringify([...myMap2]));
+      // console.dir(JSON.stringify(Array.from(myMap2)));
+
+      const jsonstr = '[[true,7],[{"foo":3},["abc"]]]';
+      const arr =JSON.parse(jsonstr)
+      const map  = new Map(arr)
+      console.dir(arr);
+      console.dir(JSON.stringify(arr))
+      console.dir(map);
     </script>
   </body>
 </html>
