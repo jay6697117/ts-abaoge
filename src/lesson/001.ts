@@ -88,7 +88,7 @@ console.log('dir', dir)
 // typeCheckByNever('hello');
 // typeCheckByNever(123);
 
-let str:any = 'hello'
-
-let num:number = (<string>str).length
-console.log('num', num)
+let str: any = 'hello';
+// let num:number = (<string>str).length // “尖括号” 语法
+let num: number = (str as string).length;
+console.log('num', num);
