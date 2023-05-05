@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server  --config ./build/webpack.config.js",
+    "dev": "NODE_ENV=development webpack-dev-server --open  --config ./build/webpack.config.js",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js",
     "type-check": "tsc --noEmit",
     "type-check-watch": "pnpm type-check -- --watch"
