@@ -126,3 +126,33 @@ console.log('dir', dir)
 // console.log('b', b)
 
 // 3.3 确定赋值断言
+// let x!: number; // 确定赋值断言
+// initialize();
+// console.log(2 * x); // Error Variable 'x' is used before being assigned.(2454)
+
+// function initialize() {
+//   x = 10;
+// }
+
+// 四、类型守卫
+interface Admin {
+  name: string;
+  privileges: string[];
+}
+
+interface Employee {
+  name: string;
+  startDate: Date;
+}
+
+type UnknownEmployee = Employee | Admin;
+
+function printEmployeeInformation(emp: UnknownEmployee) {
+  console.log('Name: ' + emp.name);
+  if ('privileges' in emp) {
+    console.log('Privileges: ' + emp.privileges);
+  }
+  if ('startDate' in emp) {
+    console.log('Start Date: ' + emp.startDate);
+  }
+}
