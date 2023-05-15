@@ -135,13 +135,16 @@ console.log('dir', dir)
 // }
 
 // 四、类型守卫
+
+// 4.1 in 关键字
+/*
 interface Admin {
   name: string;
   privileges: string[];
 }
 
 interface Employee {
-  name: string;
+  name: number;
   startDate: Date;
 }
 
@@ -149,6 +152,8 @@ type UnknownEmployee = Employee | Admin;
 
 function printEmployeeInformation(emp: UnknownEmployee) {
   console.log('Name: ' + emp.name);
+  // console.log('Privileges: ' + emp.privileges); //  类型“Employee”上不存在属性“privileges”。ts(2339)
+  // console.log('Start Date: ' + emp.startDate); //  类型“Admin”上不存在属性“startDate”。ts(2339)
   if ('privileges' in emp) {
     console.log('Privileges: ' + emp.privileges);
   }
@@ -156,3 +161,33 @@ function printEmployeeInformation(emp: UnknownEmployee) {
     console.log('Start Date: ' + emp.startDate);
   }
 }
+
+printEmployeeInformation({ name: 'hello', privileges: ['arr'] });
+console.log('----------------------');
+printEmployeeInformation({ name: 123, startDate: new Date() });
+console.log('----------------------');
+printEmployeeInformation({ name: 666, privileges: ['arr666'], startDate: new Date(1683879990978) });
+console.log('----------------------');
+ */
+/*
+function padLeft(value: string, padding: string | number | symbol) {
+  if (typeof padding === 'number') {
+    return Array(padding + 1).join(' ') + value;
+  }
+  if (typeof padding === 'string') {
+    return padding + value;
+  }
+  if (typeof padding === 'symbol') {
+    return {[padding]:value};
+  }
+  throw new Error(`Expected string or number, got '${padding}'.`);
+}
+
+const aaa = padLeft('hello', 1);
+console.log(aaa);
+const bbb = padLeft('hello', '1');
+console.log(bbb);
+const ccc = padLeft('hello', Symbol());
+console.log(ccc);
+ */
+// 4.3 instanceof 关键字
