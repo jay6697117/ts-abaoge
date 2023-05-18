@@ -190,4 +190,98 @@ console.log(bbb);
 const ccc = padLeft('hello', Symbol());
 console.log(ccc);
  */
+
 // 4.3 instanceof 关键字
+/*
+interface Padder {
+  getPaddingString(): string;
+}
+class SpaceRepeatingPadder implements Padder {
+  private numSpaces: number = 0;
+  constructor(numSpaces: number = 0) {
+    this.numSpaces = numSpaces;
+  }
+  getPaddingString(): string {
+    return Array(this.numSpaces + 1).join(' ');
+  }
+}
+const s: SpaceRepeatingPadder = new SpaceRepeatingPadder(11);
+console.log('s:', s);
+console.log(s.getPaddingString().length);
+
+class StringPadder implements Padder {
+  constructor(private value: string) {}
+  getPaddingString() {
+    return this.value;
+  }
+}
+
+let padder: Padder = new SpaceRepeatingPadder(22);
+console.log('padder', padder);
+
+console.log('padder instanceof SpaceRepeatingPadder:', padder instanceof SpaceRepeatingPadder);
+if (padder instanceof SpaceRepeatingPadder) {
+  // padder的类型收窄为 'SpaceRepeatingPadder'
+}
+ */
+// 4.4 自定义类型保护的类型谓词
+/* function isNumber(x: any): x is number { // x is number 返回boolean
+  console.log('x 1:', x, typeof x);
+  return typeof x === 'number';
+}
+
+function isString(x: any): x is string { // x is string 返回boolean
+  console.log('x 2:', x, typeof x);
+  return typeof x === 'string';
+}
+
+console.log(isNumber(111));
+console.log('--------------------');
+console.log(isString('222'));
+ */
+
+// 五、联合类型和类型别名
+// 5.1 联合类型
+/*
+const sayHello = (name?: string | undefined): void => {
+  console.log('name', name);
+};
+sayHello('hello');
+sayHello(undefined);
+sayHello(); // 加 ？可以传空 其实也是undefined
+
+// 字面量类型
+let num: 1 | 2 = 1;
+type EventNames = 'click' | 'scroll' | 'mousemove';
+let str:EventNames =  'mousemove'
+// 以上示例中的 1、2 或 'click' 'mousemove' 被称为字面量类型，用来约束取值只能是某几个值中的一个
+ */
+
+// 5.2 可辨识联合
+
+enum CarTransmission {
+  Automatic = 200,
+  Manual = 300
+}
+
+interface Motorcycle {
+  vType: 'motorcycle'; // discriminant
+  make: number; // year
+}
+
+interface Car {
+  vType: 'car'; // discriminant
+  transmission: CarTransmission; // 枚举类型当做一个​​联合类型：相当于 200 | 300
+  // transmission: 200 | 300;
+}
+
+interface Truck {
+  vType: 'truck'; // discriminant
+  capacity: number; // in tons
+}
+
+const car: Car = { vType: 'car', transmission: 300 };
+console.log('car', car);
+
+
+type vehicle = Motorcycle | Car | Truck

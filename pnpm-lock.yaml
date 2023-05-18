@@ -5,7 +5,7 @@ specifiers:
   clean-webpack-plugin: ^3.0.0
   html-webpack-plugin: ^3.2.0
   ts-loader: ^6.0.2
-  typescript: ^3.5.1
+  typescript: 5.0.2
   webpack: ^4.32.2
   webpack-cli: ^3.3.2
   webpack-dev-server: ^3.5.1
@@ -15,8 +15,8 @@ devDependencies:
   '@types/node': 16.18.14
   clean-webpack-plugin: 3.0.0_webpack@4.46.0
   html-webpack-plugin: 3.2.0_webpack@4.46.0
-  ts-loader: 6.2.2_typescript@3.9.10
-  typescript: 3.9.10
+  ts-loader: 6.2.2_typescript@5.0.2
+  typescript: 5.0.2
   webpack: 4.46.0_webpack-cli@3.3.12
   webpack-cli: 3.3.12_webpack@4.46.0
   webpack-dev-server: 3.11.3_46edf965869dcc7c8d09e022f331d1ea
@@ -1722,7 +1722,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -4010,7 +4010,7 @@ packages:
     resolution: {integrity: sha512-FclLrw8b9bMWf4QlCJuHBEVhSRsqDj6u3nIjAzPeJvgl//1hBlffdlk0MALceL14+koWEdU4ofRAXofbODxQzg==}
     dev: true
 
-  /ts-loader/6.2.2_typescript@3.9.10:
+  /ts-loader/6.2.2_typescript@5.0.2:
     resolution: {integrity: sha512-HDo5kXZCBml3EUPcc7RlZOV/JGlLHwppTLEHb3SHnr5V7NXD4klMEkrhJe5wgRbaWsSXi+Y1SIBN/K9B6zWGWQ==}
     engines: {node: '>=8.6'}
     peerDependencies:
@@ -4021,7 +4021,7 @@ packages:
       loader-utils: 1.4.2
       micromatch: 4.0.5
       semver: 6.3.0
-      typescript: 3.9.10
+      typescript: 5.0.2
     dev: true
 
   /tty-browserify/0.0.0:
@@ -4048,9 +4048,9 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: true
 
-  /typescript/3.9.10:
-    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
-    engines: {node: '>=4.2.0'}
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
     hasBin: true
     dev: true
 
