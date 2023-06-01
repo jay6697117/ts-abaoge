@@ -280,7 +280,7 @@ interface Truck {
   capacity: number; // in tons
 }
 
-const car: Car = { vType: 'car', transmission: 300 };
+const car: Car = { vType: 'car', transmission: 400 };
 console.log('car', car);
 
 
