@@ -258,7 +258,6 @@ let str:EventNames =  'mousemove'
  */
 
 // 5.2 可辨识联合
-
 enum CarTransmission {
   Automatic = 200,
   Manual = 300
@@ -280,8 +279,12 @@ interface Truck {
   capacity: number; // in tons
 }
 
-const car: Car = { vType: 'car', transmission: 400 };
+const car: Car = { vType: 'car', transmission: 300 };
 console.log('car', car);
 
+type vehicle = Motorcycle | Car | Truck;
 
-type vehicle = Motorcycle | Car | Truck
+
+type Arr = [1, 2, 3, 4];
+type ReveArr<T extends any[]> = T extends [infer First, ...infer rest] ? [...ReveArr<rest>, First] : T
+type Res = ReveArr<Arr>;
